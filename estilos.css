@@ -1,0 +1,151 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+} 
+
+body{
+   background-image: url(images/bg-intro-mobile.png);
+   background-color: hsl(0, 100%, 74%) ; 
+}
+
+.contenedor{
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.texto{
+    margin: 15% 0% 15% 0%;
+    color: white;
+}
+
+.texto h2{
+    font-size: 30px;
+}
+
+.tryit{
+    padding: 2px;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 12px;
+    box-shadow: 0px 11px 0px -2px rgba(49, 49, 49, 0.5);
+    margin-bottom: 10%;
+    color: white;
+}
+
+.formulario{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 11px 0px -2px rgba(49, 49, 49, 0.5);
+    margin-bottom: 10%;
+}
+
+.form{
+    padding-top: 5%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+input{
+    text-align: left;
+    padding: 15px;
+    margin: 2%;
+    height: 50px;
+    width: 220px;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.formulario p{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+p a b{
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.button{
+    margin-top: 5%;
+    padding: 10px 20px 10px 20px;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 12px;
+    border-color: unset;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+      
+.button:hover {
+    background: hsl(155, 72%, 59%);
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 720px){
+    .texto {
+        margin: 10% 0% 10% 0%;
+    }
+
+    input{
+        width: 450px;
+    }
+
+    .error{
+        margin-left: 50%;
+    }
+
+    .formulario p{
+        margin-bottom: 5%;
+    }
+
+    .button{
+        font-size: 16px;
+        width: 450px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .contenedor{
+        display: inline-flex;
+        flex-direction: row;
+    }
+    .texto{
+        margin: 20% 5% 10% 0%;
+    }
+
+    .texto h2 {
+        font-size: 50px;
+        text-align: left;
+        line-height: 1;
+    }
+
+    .texto p{
+        text-align: left;
+    }
+
+    .columnas{
+        margin-top: 8%;
+    }
+
+    .tryit{
+        margin-bottom: 8%;
+    }
+
+    .form{
+        width: 500px;
+        display: inline-block;
+    }
+}
+
+
+
+
